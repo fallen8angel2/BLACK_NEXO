@@ -363,7 +363,13 @@ class CAR(Platforms):
     CarSpecs(mass=1690, wheelbase=3.055, steerRatio=17),  # mass: from https://www.hyundai-motor.com.tw/clicktobuy/custin#spec_0, steerRatio: from learner
     flags=HyundaiFlags.CHECKSUM_CRC8,
   )
-
+  NEXO_FE = HyundaiPlatformConfig(
+    "HYUNDAI NEXO (FE)",
+    [HyundaiCarDocs("Hyundai NEXO", "All", car_parts=CarParts.common([CarHarness.hyundai_h]))],
+    CarSpecs(mass=1885, wheelbase=2.79, steerRatio=14.19, tireStiffnessFactor=0.385),
+    flags=HyundaiFlags.EV,
+  )
+  
   # Kia
   KIA_FORTE = HyundaiPlatformConfig(
     "KIA FORTE E 2018 & GT 2021",

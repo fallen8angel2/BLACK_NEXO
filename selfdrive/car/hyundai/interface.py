@@ -12,6 +12,7 @@ from openpilot.selfdrive.car.interfaces import CarInterfaceBase, ACCEL_MIN, ACCE
 from openpilot.selfdrive.car.disable_ecu import disable_ecu
 from openpilot.selfdrive.controls.neokii.cruise_state_manager import is_radar_point
 from openpilot.common.params import Params
+from openpilot.selfdrive.car.hyundai.cruise_helper import enable_radar_tracks
 
 Ecu = car.CarParams.Ecu
 ButtonType = car.CarState.ButtonEvent.Type
